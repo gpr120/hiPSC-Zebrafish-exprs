@@ -1,0 +1,16 @@
+version: '3'
+services:
+  rstudio:
+    build: .
+    image: tidyverse:4.2_jp
+    container_name: huirasawa_zebra
+    environment: 
+      #任意のパスワードを設定する
+      - PASSWORD=
+    ports:
+      - 8787:8787
+    volumes:
+      - ./keisan:/home/rstudio/kankyo_220501
+      - /mnt/c/Users/kenya/Documents/RNAseq:/home/rstudio/RNAseq
+    tty: true
+    stdin_open: true
