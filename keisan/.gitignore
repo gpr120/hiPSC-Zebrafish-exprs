@@ -3,3 +3,4 @@ renv/
 .cache/
 .local/
 rstudio.Rproj
+.Rhistory
