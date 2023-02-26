@@ -10,7 +10,7 @@ services:
     ports:
       - 8787:8787
     volumes:
-      - ./keisan:/home/rstudio/kankyo_220501
+      - ./keisan:/home/rstudio
       - /mnt/c/Users/kenya/Documents/RNAseq:/home/rstudio/RNAseq
     tty: true
     stdin_open: true
