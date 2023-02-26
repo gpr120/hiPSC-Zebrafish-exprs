@@ -4,7 +4,7 @@
     "Repositories": [
       {
         "Name": "CRAN",
-        "URL": "http://healthstat.snu.ac.kr/CRAN"
+        "URL": "https://healthstat.snu.ac.kr/CRAN"
       },
       {
         "Name": "BioCann",
