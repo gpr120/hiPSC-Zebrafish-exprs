@@ -12,6 +12,7 @@ This code is.
 
 - Install R, Python
 - Donload or git clone this repository
+- R dependency were managed by [Renv](https://rstudio.github.io/renv/articles/renv.html).
 - Run script.
 
 ## Papers
