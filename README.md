@@ -29,7 +29,7 @@ This code is.
   - `NGS_analysis_R/221227_rsem2TCC.R`
 - 作図
   - Figure X: `NGS_analysis_R/221227_ngs_PCA_1-3.R`
-  - Figure X: `NGS_analysis_R/221227_zsore.R`
+  - Figure X: `NGS_analysis_R/230106_z-score_zebra.R`
 
 ## Citation
 
