@@ -2,5 +2,6 @@ renv/
 .config/
 .cache/
 .local/
+result/
 rstudio.Rproj
 .Rhistory

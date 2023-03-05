@@ -1,16 +1,14 @@
-##### 立命の追加解析をする
-library(gplots)
+##### TCCまでを行う．
 
-server <- "/home/rstudio/kankyo_220501"
+server <- "/home/rstudio"
 setwd(server)
-source("renv/activate.R")
+source(file.path(server, "keisan/function/data_forR4.2.R"))
 
-source(file.path(server, "00data/data_forR4.1.R"))
+library("gtools")
+library("TCC")
+
 
 # setwd(.work <- file.path(server, sprintf("%sueno", .date)))
-
-setwd(.work <- file.path(server, sprintf("%sueno", "221227")))
-
 
 read_rsem_result <- function(rsem_result_f_list){
     # rsemの結果のファイルリストを入れると，CountとTPMを返す関数
@@ -31,7 +29,11 @@ read_rsem_result <- function(rsem_result_f_list){
     return(list(rsem_result_count, rsem_result_tpm))
 }
 
-rsem_result_f = file.path("/home/rstudio", "RNAseq", "221211_Rit_zebra", "rsem_results_221216")
+
+dir.create(.work <- file.path(server, "keisan", "result", "zebra_ngs"), recursive=T)
+setwd(.work)
+
+rsem_result_f = file.path(server, "RNAseq", "221211_Rit_zebra", "rsem_results_221216")
 # fileのリスト
 rsem_result_f_list = list.files(rsem_result_f, pattern="genes.results", full.names=T)
 
@@ -41,7 +43,7 @@ gene_tpm <- gene_count_tpm[[2]]
 
 
 # GTFから必要な情報を抜き出す．今回はGeneIDだけ．
-gtf_f <- "~/RNAseq/database/Zebrafish/GCF_000002035.6_GRCz11_genomic.gtf.gz"
+gtf_f <- "~/RNAseq/database/Zebrafish/GCF_000002035.6_GRCz11_genomic.gtf"
 gtf_info <- read.table(file=gtf_f, sep="\t", header=F)
 tmp <- (gtf_info[,9])
 tmp <- gsub("^gene_id.", "", tmp)
