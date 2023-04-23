@@ -5,3 +5,5 @@ renv/
 result/
 rstudio.Rproj
 .Rhistory
+.git/
+.DS_Store
