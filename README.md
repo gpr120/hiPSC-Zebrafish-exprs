@@ -30,7 +30,8 @@ This code is.
 - 作図
   - Figure X: `NGS_analysis_R/221227_ngs_PCA_1-3.R`
   - Figure X: `NGS_analysis_R/230106_z-score_zebra.R`
+  - Figure X: `microarray_analysis_R/230107_Rit_analysis_microarray`
 
 ## Citation
 
-xxx
+bibtexフォーマットにて記載予定．
