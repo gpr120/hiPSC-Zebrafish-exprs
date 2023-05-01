@@ -1,0 +1,9 @@
+Package: nbase
+Title: N's Base Package
+Description: Base package.
+Version: 15.06.11
+Date: 2015-06-11
+Author: Naoi Okada
+Depends: R (>= 2.10.0)
+License: GPL-3
+Packaged: 2015-06-11 13:21:48 JST

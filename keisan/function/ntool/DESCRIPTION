@@ -1,0 +1,9 @@
+Package: ntool
+Title: N's Tools for Analysis
+Description: Tools for analysis
+Version: 14.04.29
+Date: 2014-04-29
+Author: Naoi Okada
+Depends: R (>= 2.10.0)
+License: GPL-3
+Packaged: 2014-04-29 04:29:46 JST
