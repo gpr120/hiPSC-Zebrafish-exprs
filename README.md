@@ -2,7 +2,7 @@
 
 This code is.
 
-## Dependency (英語は適当)
+## Dependency
 
 - This program checked in ubuntu or WSL2.
 - Check Dockerfile.
@@ -23,11 +23,11 @@ This code is.
 
 ## Usage
 
-- 発現量の計算．
+- A Shell script to calculate gene expression levels from FASTQ files．
   - `zebra/NGS_analysis_shell/*.sh`,
-- DEG 検出
+- A function to detect differentially expressed genes (DEGs) using TCC.
   - `NGS_analysis_R/221227_rsem2TCC.R`
-- 作図
+- Functions used for plotting.
   - Figure X: `NGS_analysis_R/221227_ngs_PCA_1-3.R`
   - Figure X: `NGS_analysis_R/230106_z-score_zebra.R`
   - Figure X: `microarray_analysis_R/230107_Rit_analysis_microarray`
