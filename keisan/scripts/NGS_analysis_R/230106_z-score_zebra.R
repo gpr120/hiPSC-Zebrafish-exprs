@@ -79,7 +79,7 @@ gene <- c("^otx1", "^otx2a", "^otx2b", "^egr2a", "^egr2b", "^meis1a", "^meis1b",
 save <- "HOX related genes"
 gene_heatmap(fData, pData, tmm, gene, save, exact=F, Colv=T)
 save <- paste(save, "_No_cluster", sep="")
-gene_heatmap(fData, pData, tmm, gene, save, exact=F, Colv=F, Rowv=F,sample=sample)
+gene_heatmap(fData, pData, tmm, gene, save, exact=F, Colv=F, Rowv=T,sample=sample)
 gene_all <- c(gene_all, gene)
 
 # rargbは検出限界以下のサンプルがあるため，除外
@@ -87,6 +87,6 @@ save <- "Retinoic acid related genes"
 gene <- c("aldh1a2", "aldh1a3", "cyp26a1", "cyp26b1", "cyp26c1 crabp1a", "crabp1b", "crabp2a", "crabp2b", "stra6", "raraa", "rarab", "rarga",  "rxraa", "rxrab", "rxrba", "rxrbb", "rxrga", "rxrgb")
 gene_heatmap(fData, pData, tmm, gene, save, exact=T, Colv=T)
 save <- paste(save, "_No_cluster", sep="")
-gene_heatmap(fData, pData, tmm, gene, save, exact=T, Colv=F, Rowv=F,sample=sample)
+gene_heatmap(fData, pData, tmm, gene, save, exact=T, Colv=F, Rowv=T,sample=sample)
 gene_all <- c(gene_all, gene)
 
