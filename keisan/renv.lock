@@ -183,6 +183,15 @@
         "S4Vectors"
       ]
     },
+    "GO.db": {
+      "Package": "GO.db",
+      "Version": "3.16.0",
+      "Source": "Bioconductor",
+      "Hash": "21c1446b676a6a58bc1e4154755fc65d",
+      "Requirements": [
+        "AnnotationDbi"
+      ]
+    },
     "GenomeInfoDb": {
       "Package": "GenomeInfoDb",
       "Version": "1.34.9",
@@ -447,6 +456,56 @@
       "Hash": "d7d50df67bc0fffbc6b4c3a13d1d01f3",
       "Requirements": []
     },
+    "affxparser": {
+      "Package": "affxparser",
+      "Version": "1.70.0",
+      "Source": "Bioconductor",
+      "git_url": "https://git.bioconductor.org/packages/affxparser",
+      "git_branch": "RELEASE_3_16",
+      "git_last_commit": "d2779bf",
+      "git_last_commit_date": "2022-11-01",
+      "Hash": "4875269dfc20db8108b979f373c725d3",
+      "Requirements": []
+    },
+    "affy": {
+      "Package": "affy",
+      "Version": "1.76.0",
+      "Source": "Bioconductor",
+      "git_url": "https://git.bioconductor.org/packages/affy",
+      "git_branch": "RELEASE_3_16",
+      "git_last_commit": "3bb3093",
+      "git_last_commit_date": "2022-11-01",
+      "Hash": "cb62ac3c623b622d0acbf81d25ca51f2",
+      "Requirements": [
+        "Biobase",
+        "BiocGenerics",
+        "BiocManager",
+        "affyio",
+        "preprocessCore",
+        "zlibbioc"
+      ]
+    },
+    "affyio": {
+      "Package": "affyio",
+      "Version": "1.68.0",
+      "Source": "Bioconductor",
+      "git_url": "https://git.bioconductor.org/packages/affyio",
+      "git_branch": "RELEASE_3_16",
+      "git_last_commit": "33080c5",
+      "git_last_commit_date": "2022-11-01",
+      "Hash": "56c6305f19e55be9e27577a91f9008f0",
+      "Requirements": [
+        "zlibbioc"
+      ]
+    },
+    "amap": {
+      "Package": "amap",
+      "Version": "0.8-19",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "1b5a878bda18bb41d071cc61e6462398",
+      "Requirements": []
+    },
     "annotate": {
       "Package": "annotate",
       "Version": "1.76.0",
@@ -597,6 +656,14 @@
       "Hash": "e4f97056611e8e6b8b852d13b7400cf1",
       "Requirements": []
     },
+    "dataframes2xls": {
+      "Package": "dataframes2xls",
+      "Version": "0.4.7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "b64e44a2c464dddcc05a919af8920308",
+      "Requirements": []
+    },
     "edgeR": {
       "Package": "edgeR",
       "Version": "3.40.2",
@@ -644,6 +711,27 @@
       "Hash": "f7736a18de97dea803bde0a2daaafb27",
       "Requirements": []
     },
+    "ff": {
+      "Package": "ff",
+      "Version": "4.0.9",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "53fc01365326b8b68e814a03d4ab6307",
+      "Requirements": [
+        "bit"
+      ]
+    },
+    "foreach": {
+      "Package": "foreach",
+      "Version": "1.5.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "618609b42c9406731ead03adf5379850",
+      "Requirements": [
+        "codetools",
+        "iterators"
+      ]
+    },
     "formatR": {
       "Package": "formatR",
       "Version": "1.14",
@@ -670,6 +758,33 @@
       "Repository": "CRAN",
       "Hash": "0d9bf02413ddc2bbe8da9ce369dcdd2b",
       "Requirements": []
+    },
+    "gdata": {
+      "Package": "gdata",
+      "Version": "2.18.0.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "8c86ee4c7aa7dd31ef0a28b28649bde4",
+      "Requirements": [
+        "gtools"
+      ]
+    },
+    "genefilter": {
+      "Package": "genefilter",
+      "Version": "1.80.3",
+      "Source": "Bioconductor",
+      "git_url": "https://git.bioconductor.org/packages/genefilter",
+      "git_branch": "RELEASE_3_16",
+      "git_last_commit": "2138dca",
+      "git_last_commit_date": "2023-01-19",
+      "Hash": "456e757607027526632bc38e4d92ff50",
+      "Requirements": [
+        "AnnotationDbi",
+        "Biobase",
+        "BiocGenerics",
+        "annotate",
+        "survival"
+      ]
     },
     "geneplotter": {
       "Package": "geneplotter",
@@ -740,10 +855,10 @@
     },
     "gtools": {
       "Package": "gtools",
-      "Version": "3.9.2.1",
+      "Version": "3.9.4",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "be8f98adb534ef22cfc57a3577e0449f",
+      "Hash": "88bb96eaf7140cdf29e374ef74182220",
       "Requirements": []
     },
     "highr": {
@@ -776,6 +891,14 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "0080607b4a1a7b28979aecef976d8bc2",
+      "Requirements": []
+    },
+    "iterators": {
+      "Package": "iterators",
+      "Version": "1.0.14",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "8954069286b4b2b0d023d1b288dce978",
       "Requirements": []
     },
     "jsonlite": {
@@ -924,6 +1047,54 @@
         "lattice"
       ]
     },
+    "oligo": {
+      "Package": "oligo",
+      "Version": "1.62.2",
+      "Source": "Bioconductor",
+      "git_url": "https://git.bioconductor.org/packages/oligo",
+      "git_branch": "RELEASE_3_16",
+      "git_last_commit": "05a7e3c",
+      "git_last_commit_date": "2023-01-19",
+      "Hash": "0c4ae4e4677681193f59b40a6ad9dd6e",
+      "Requirements": [
+        "Biobase",
+        "BiocGenerics",
+        "Biostrings",
+        "DBI",
+        "RSQLite",
+        "affxparser",
+        "affyio",
+        "ff",
+        "oligoClasses",
+        "preprocessCore",
+        "zlibbioc"
+      ]
+    },
+    "oligoClasses": {
+      "Package": "oligoClasses",
+      "Version": "1.60.0",
+      "Source": "Bioconductor",
+      "git_url": "https://git.bioconductor.org/packages/oligoClasses",
+      "git_branch": "RELEASE_3_16",
+      "git_last_commit": "cf9d76c",
+      "git_last_commit_date": "2022-11-01",
+      "Hash": "2f17a55a0e3bb7f72e948430fccda7f4",
+      "Requirements": [
+        "Biobase",
+        "BiocGenerics",
+        "BiocManager",
+        "Biostrings",
+        "DBI",
+        "GenomicRanges",
+        "IRanges",
+        "RSQLite",
+        "S4Vectors",
+        "SummarizedExperiment",
+        "affyio",
+        "ff",
+        "foreach"
+      ]
+    },
     "openssl": {
       "Package": "openssl",
       "Version": "2.0.5",
@@ -974,6 +1145,17 @@
       "Hash": "bd54ba8a0a5faded999a7aab6e46b374",
       "Requirements": []
     },
+    "preprocessCore": {
+      "Package": "preprocessCore",
+      "Version": "1.60.2",
+      "Source": "Bioconductor",
+      "git_url": "https://git.bioconductor.org/packages/preprocessCore",
+      "git_branch": "RELEASE_3_16",
+      "git_last_commit": "71fbf1d",
+      "git_last_commit_date": "2023-01-19",
+      "Hash": "2f43c91de2c073748ca399e323693de4",
+      "Requirements": []
+    },
     "renv": {
       "Package": "renv",
       "Version": "0.15.5",
@@ -1014,6 +1196,16 @@
       "Repository": "CRAN",
       "Hash": "40b74690debd20c57d93d8c246b305d4",
       "Requirements": []
+    },
+    "survival": {
+      "Package": "survival",
+      "Version": "3.3-1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "f6189c70451d3d68e0d571235576e833",
+      "Requirements": [
+        "Matrix"
+      ]
     },
     "sys": {
       "Package": "sys",
