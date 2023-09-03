@@ -10,7 +10,9 @@
 # system(sprintf("mkdir -p %s", Sys.getenv("R_LIBS_USER"))); .libPaths(Sys.getenv("R_LIBS_USER"))
 
 # RENVの起動
-setwd("keisan")
+server <- "/home/rstudio/keisan"
+
+setwd(server)
 source(".Rprofile")
 
 # オプションの設定。
@@ -18,11 +20,10 @@ options(stringsAsFactors = FALSE)
 #options(repos = c(CRAN = "http://cran.md.tsukuba.ac.jp/"))
 #options(repos = c(CRAN = "http://cran.ism.ac.jp/"))
 options(repos = c(CRAN = "https://healthstat.snu.ac.kr/CRAN"))
-utils::setRepositories(ind = c(1, 3:6))
+# utils::setRepositories(ind = c(1, 3:6))
 # プロキシの設定。
 #Sys.setenv(http_proxy = "http://proxy.kuins.net:8080")
 #Sys.setenv(ftp_proxy = "http://proxy.kuins.net:8080")
-Sys.setenv(ALL_PROXY = "") # ALL_PROXYは効かなくなっているらしい
 Sys.setenv(http_proxy = "")
 Sys.setenv(ftp_proxy = "")
 
@@ -41,12 +42,12 @@ if (!requireNamespace("renv", quietly = TRUE))
 # # インストールしたパッケージの保管場所の設定。この後はRenv
 # library(renv)
 # # パッケージのインストール。
-# if (!requireNamespace("nbase", quietly = TRUE))
-#   (utils::install.packages(file.path(server, "00data", "packages", "nbase"), lib = .libPaths()[1], repos = NULL, type = ""))
-# library("nbase")
-# if (!requireNamespace("narray", quietly = TRUE))
-#   (utils::install.packages(file.path(server, "00data", "packages", "narray"), lib = .libPaths()[1], repos = NULL, type = ""))
-# library("narray")
+if (!requireNamespace("nbase", quietly = TRUE))
+  (utils::install.packages(file.path(server, "00data", "packages", "nbase"), lib = .libPaths()[1], repos = NULL, type = ""))
+library("nbase")
+if (!requireNamespace("narray", quietly = TRUE))
+  (utils::install.packages(file.path(server, "00data", "packages", "narray"), lib = .libPaths()[1], repos = NULL, type = ""))
+library("narray")
 # if (!requireNamespace("ntool", quietly = TRUE))
 #   (utils::install.packages(file.path(server, "00data", "packages", "ntool"), lib = .libPaths()[1], repos = NULL, type = ""))
 # library("ntool")
@@ -76,6 +77,13 @@ check.installs.Biocpackages(biopackages)
 library("affy")
 library("gtools")
 library("TCC")
+if (!requireNamespace("nbase", quietly = TRUE))
+  (utils::install.packages(file.path(server, "functions", "nbase"), lib = .libPaths()[1], repos = NULL, type = ""))
+library("nbase")
+
+if (!requireNamespace("narray", quietly = TRUE))
+  (utils::install.packages(file.path(server, "functions", "narray"), lib = .libPaths()[1], repos = NULL, type = ""))
+library("narray")
 
 # load.packages("nbase","narray", "affy", "gplots", "gdata", "gtools", "grid", "GOstats", "hugene20sttranscriptcluster.db", "affycoretools", "GEOquery", "amap", "GO.db")# "GEOmetadb")
 
