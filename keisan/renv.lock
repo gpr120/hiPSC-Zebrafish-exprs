@@ -5,22 +5,6 @@
       {
         "Name": "CRAN",
         "URL": "https://healthstat.snu.ac.kr/CRAN"
-      },
-      {
-        "Name": "BioCann",
-        "URL": "https://bioconductor.org/packages/3.15/data/annotation"
-      },
-      {
-        "Name": "BioCexp",
-        "URL": "https://bioconductor.org/packages/3.15/data/experiment"
-      },
-      {
-        "Name": "CRANextra",
-        "URL": "https://www.stats.ox.ac.uk/pub/RWin"
-      },
-      {
-        "Name": "R-Forge",
-        "URL": "https://R-Forge.R-project.org"
       }
     ]
   },
@@ -1037,6 +1021,21 @@
         "colorspace"
       ]
     },
+    "narray": {
+      "Package": "narray",
+      "Version": "19.05.20",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "c8fbf4a6db77cd16dae1db32d43507d1",
+      "Requirements": []
+    },
+    "nbase": {
+      "Package": "nbase",
+      "Version": "15.06.11",
+      "Source": "unknown",
+      "Hash": "5f9e49366f7f9d36521cc9be198821cd",
+      "Requirements": []
+    },
     "nlme": {
       "Package": "nlme",
       "Version": "3.1-157",
@@ -1046,6 +1045,13 @@
       "Requirements": [
         "lattice"
       ]
+    },
+    "ntool": {
+      "Package": "ntool",
+      "Version": "14.04.29",
+      "Source": "unknown",
+      "Hash": "eccd935291c0559830719d83ad874255",
+      "Requirements": []
     },
     "oligo": {
       "Package": "oligo",
@@ -1103,6 +1109,15 @@
       "Hash": "b04c27110bf367b4daa93f34f3d58e75",
       "Requirements": [
         "askpass"
+      ]
+    },
+    "org.Dr.eg.db": {
+      "Package": "org.Dr.eg.db",
+      "Version": "3.15.0",
+      "Source": "Bioconductor",
+      "Hash": "2cc52ff4025babe6fa3a3834b33a98a6",
+      "Requirements": [
+        "AnnotationDbi"
       ]
     },
     "pillar": {
