@@ -32,6 +32,10 @@ This code is.
   - Figure X: `NGS_analysis_R/230106_z-score_zebra.R`
   - Figure X: `microarray_analysis_R/230107_Rit_analysis_microarray`
 
+- Functions make expressionSet at Zebra to compere with iPS.
+  - `NGS_analysis_R/make_expressionset_NGS.R`
+    - depend: `NGS_analysis_R/221227_rsem2TCC.R`
+
 ## Citation
 
 bibtexフォーマットにて記載予定．
