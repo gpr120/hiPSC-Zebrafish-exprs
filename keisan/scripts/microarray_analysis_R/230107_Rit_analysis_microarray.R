@@ -1,21 +1,23 @@
 ##### human のヒートマップ作成
 library(gplots)
 
-server <- "/home/rstudio"
+
+server <- "/home/rstudio/keisan"
 setwd(server)
-source(file.path(server, "keisan/function/data_forR4.2.R"))
+source(file.path(server, "00data/packages/data_forR4.2.R"))
+
 
 ## sever/Microarrray/00data/ExpressionSet/に保存してあるexpsetファイルを読み込む。
 eset <- c("Ritsumei")
 
-setwd(.work <- file.path(server, "keisan", "result", "human_microarray"))
+setwd(.work <- file.path(server, "result", "human_microarray"))
 # 解析したいGSEの番号を並べる。自前のデータを使いたい場合は"GPR120_EpiAdip"などと入れる。
 # どんな名前で保存されているかは/Volumes/keisan/Documents/Calc/Microarray/00data/ExpressionSetを参照。
 
 # 続いて以下をコピペして実行。
 afy <- list() # ここから
 for(i in eset){
-  read <- list.files(.exp_path <- file.path(server, "keisan", "result", "ExpressionSet"))
+  read <- list.files(.exp_path <- file.path(server, "result", "ExpressionSet"))
   read <- read[grep(paste("^", i, ".*.expset", sep = ""), read)]
   for(j in read){
     message(sprintf("read %s ...", j))

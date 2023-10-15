@@ -83,7 +83,10 @@ save <- paste(save, "_No_cluster", sep="")
 gene_heatmap(fData, pData, tmm, gene, save, exact=F, Colv=F, Rowv=T,sample=sample)
 gene_all <- c(gene_all, gene)
 
-# rargbは検出限界以下のサンプルがあるため，除外
+# crabp1a, rargbは平均count数が10未満なので，遺伝子発現量（正規化済み）を出す前に除外 (raragb は rargbの間違いと仮定)
+# gene_count.csv で確認可能
+# cyp26c1 はタイプミスで前回送信時に修正済 ("cyp26c1", "crabp1a" を"cyp26c1 crabp1a"としていた)
+
 save <- "Retinoic acid related genes"
 gene <- c("aldh1a2", "aldh1a3", "cyp26a1", "cyp26b1", "cyp26c1", "crabp1b", "crabp2a", "crabp2b", "stra6", "raraa", "rarab", "rarga",  "rxraa", "rxrab", "rxrba", "rxrbb", "rxrga", "rxrgb")
 gene_heatmap(fData, pData, tmm, gene, save, exact=T, Colv=T)
