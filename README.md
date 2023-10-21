@@ -4,7 +4,7 @@ This code is.
 
 ## Dependency
 
-- This program checked in ubuntu or WSL2.
+- This program checked in ubuntu or Window subsystem for Linux 2 (ubuntu18.04).
 - Check Dockerfile.
 - R: check `renv.lock` for detail
 
@@ -23,18 +23,24 @@ This code is.
 
 ## Usage
 
+- Functions to detect differentially expressed genes (DEGs) using rowFtests (genefilter).
+  - `231014_Rit_update_exprs`
+
 - A Shell script to calculate gene expression levels from FASTQ files．
   - `zebra/NGS_analysis_shell/*.sh`,
-- A function to detect differentially expressed genes (DEGs) using TCC.
+- Functions to detect differentially expressed genes (DEGs) using TCC (NGS).
   - `NGS_analysis_R/221227_rsem2TCC.R`
-- Functions used for plotting.
-  - Figure X: `NGS_analysis_R/221227_ngs_PCA_1-3.R`
-  - Figure X: `NGS_analysis_R/230106_z-score_zebra.R`
-  - Figure X: `microarray_analysis_R/230107_Rit_analysis_microarray`
 
 - Functions make expressionSet at Zebra to compere with iPS.
   - `NGS_analysis_R/make_expressionset_NGS.R`
     - depend: `NGS_analysis_R/221227_rsem2TCC.R`
+
+- Functions used for plotting.
+  - Figure 3.a-c: `microarray_analysis_R/230107_Rit_analysis_microarray`
+  - Figure 7.a: `NGS_analysis_R/221227_ngs_PCA_1-3.R`
+  - Figure 7.b-d: `NGS_analysis_R/230106_z-score_zebra.R`
+
+
 
 ## Citation
 
