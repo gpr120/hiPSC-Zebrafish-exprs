@@ -40,8 +40,6 @@ This code is.
   - Figure 7.a: `NGS_analysis_R/221227_ngs_PCA_1-3.R`
   - Figure 7.b-d: `NGS_analysis_R/230106_z-score_zebra.R`
 
-
-
 ## Citation
 
 bibtexフォーマットにて記載予定．

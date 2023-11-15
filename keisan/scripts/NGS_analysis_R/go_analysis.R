@@ -68,7 +68,7 @@ write.csv(cbind(fData(afy[[1]])[, 1:4], notes(afy[[1]])$test), file.path(.work, 
 
 ## afyに対してGO解析を行う。パラメータが多いが、これは関数の自由度を高くした結果であり、自分で設定する部分はそれほど多くない。
 microarray.goplot(afy, cut = 1e-5, lmt = -10, tag = notes(afy[[1]])$tag, inside = -10, cluster = c("") , ind = id, barplot.length = 0, network.analysis = F, clusterKEGG = F, ver = 3, hccmethod = "-bind", firstpage = F)
-microarray.goplot(afy, cut = 1e-5, lmt = -10, tag = notes(afy[[1]])$tag, inside = -10, cluster = c("111","110", "1010", "10010") , notice = NULL, ind = id, barplot.length = 500, show.ontology = NULL, network.analysis = F, clusterKEGG = F, ver = 3, hccmethod = "-bind")
+microarray.goplot(afy, cut = 1e-5, lmt = -10, tag = notes(afy[[1]])$tag, inside = -10, cluster = c("1110","101111", "101010", "1001111", "10010") , notice = NULL, ind = id, barplot.length = 500, show.ontology = NULL, network.analysis = F, clusterKEGG = F, ver = 3, hccmethod = "-bind")
 
 
 library(openxlsx)
