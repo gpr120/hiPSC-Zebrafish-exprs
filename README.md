@@ -1,6 +1,6 @@
-# xxx
+# title
 
-This code is.
+This code was used in the analysis of the paper "Bisphenol A enhances retinoic acid-HOX genes signaling impeding brain development".
 
 ## Dependency
 
@@ -37,8 +37,8 @@ This code is.
 
 - Functions used for plotting.
   - Figure 3.a-c: `microarray_analysis_R/230107_Rit_analysis_microarray`
-  - Figure 7.a: `NGS_analysis_R/221227_ngs_PCA_1-3.R`
-  - Figure 7.b-d: `NGS_analysis_R/230106_z-score_zebra.R`
+  - Figure 6.a: `NGS_analysis_R/221227_ngs_PCA_1-3.R`
+  - Figure 6.b-d: `NGS_analysis_R/230106_z-score_zebra.R`
 
 
 
