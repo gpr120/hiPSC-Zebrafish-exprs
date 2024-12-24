@@ -1,6 +1,8 @@
 # xxx
 
-This code is.
+This repository contains code used for analyzing NGS data (from zebrafish embryos) and microarray data (from human iPS cells), as well as for generating figures related to our study entitled "Effects of Bisphenol A and Retinoic Acid Exposure on Neuron and Brain Formation: a Study in Human Induced Pluripotent Stem Cells and Zebrafish Embryos"
+
+(Note: the title is subject to change).
 
 ## Dependency
 
@@ -10,7 +12,7 @@ This code is.
 
 ## Setup
 
-- Install R, Python
+- Install R
 - Donload or git clone this repository
 - R dependency were managed by [Renv](https://rstudio.github.io/renv/articles/renv.html).
 - Run script.
@@ -42,4 +44,4 @@ This code is.
 
 ## Citation
 
-bibtexフォーマットにて記載予定．
+A BibTeX-formatted citation will be added upon acceptance of the manuscript.

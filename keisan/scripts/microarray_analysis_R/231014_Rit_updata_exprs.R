@@ -124,12 +124,12 @@ if (0) { # pair の追加，23/10/14
 # read <- microarray.pair(read, ind = c(1,29,23,26,9,5,12,14,15,19,28))
 read <- microarray.pair(read, ind = c(1,29,23,26,9,5,12,14,15,19, 28,27))
 
-[1] "BPA20 vs DMSO"      "RA100 vs BPA20"    
- [3] "RA500 vs DMSO"      "RA100BPA20 vs DMSO"
- [5] "DMSO vs IPS"        "BPA20 vs IPS"      
- [7] "RA100 vs IPS"       "RA100BPA20 vs IPS" 
- [9] "RA500 vs IPS"       "IPS vs DMSO"       
-[11] "RA100 vs DMSO"  
+# [1] "BPA20 vs DMSO"      "RA100 vs BPA20"    
+#  [3] "RA500 vs DMSO"      "RA100BPA20 vs DMSO"
+#  [5] "DMSO vs IPS"        "BPA20 vs IPS"      
+#  [7] "RA100 vs IPS"       "RA100BPA20 vs IPS" 
+#  [9] "RA500 vs IPS"       "IPS vs DMSO"       
+# [11] "RA100 vs DMSO"  
 # Step5: 統計量の計算~GO解析
 
 # ここから下、if文が終わるところまでコピペして実行。Errorが出たらその旨を記載して次へ。Warningは無視して問題ない。
